@@ -1,50 +1,46 @@
-# instacart-orders
+# instacart-scraper
 
-Fetch your Instacart order history. One thing, done well.
-
-No dependencies. Just Python 3 (pre-installed on macOS/Linux).
+A command-line tool for scraping your Instacart order history.
 
 ## Install
 
 ```bash
-curl -o /usr/local/bin/instacart-orders https://raw.githubusercontent.com/mike-vincent/instacart-orders/master/instacart-orders
-chmod +x /usr/local/bin/instacart-orders
+brew tap mike-vincent/instacart-scraper
+brew install instacart-scraper
 ```
 
-Or clone:
-```bash
-git clone https://github.com/mike-vincent/instacart-orders.git
-```
+## Get your session cookie
 
-## Get Your Session Cookie
-
-1. Log into [instacart.com](https://instacart.com)
-2. DevTools (`Cmd+Option+I`) → Application → Cookies
+1. Log into instacart.com
+2. DevTools (Cmd+Option+I) → Application → Cookies
 3. Copy value of `_instacart_session_id`
 
-## Run
+## Usage
 
 ```bash
-instacart-orders --session "YOUR_COOKIE"
+instacart-scraper -s "YOUR_COOKIE"
+instacart-scraper -s "COOKIE" --months 6 -f csv -o orders.csv
 ```
 
 ## Options
 
 ```
---session, -s    Session cookie (required)
+-s, --session    Session cookie (required)
 --months N       Last N months
 --days N         Last N days
 --since DATE     Since YYYY-MM-DD
---format FMT     json (default), csv, or text
--o FILE          Output file
--q               Quiet
+-f, --format     json, csv, or text
+-o, --output     Output file
+-q, --quiet      Quiet mode
 ```
 
-## What It Does
+## Output
 
-**Input:** Instacart session cookie
+JSON, CSV, or text with order dates, totals, retailers, and full item details.
 
-**Output:** Orders with item details (name, quantity, size, retailer)
+## Author
+
+[Mike Vincent](https://www.mikevincent.dev), Los Angeles
 
 ## License
 

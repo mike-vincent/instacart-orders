@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>instacart-orders</title>
+    <title>instacart-scraper</title>
     <style>
         :root {
             --bg: #fafafa;
@@ -108,21 +108,21 @@
     </style>
 </head>
 <body>
-    <h1>instacart-orders</h1>
+    <h1>instacart-scraper</h1>
     <p style="margin-top:-24px;margin-bottom:32px;">A command-line tool for scraping your Instacart order history.</p>
 
     <section>
-        <h2>What does instacart-orders do?</h2>
-        <p>instacart-orders exports your Instacart order history to JSON, CSV, or text. instacart-orders outputs order dates, totals, retailers, and full item details.</p>
+        <h2>What does instacart-scraper do?</h2>
+        <p>instacart-scraper exports your Instacart order history to JSON, CSV, or text. instacart-scraper outputs order dates, totals, retailers, and full item details.</p>
     </section>
 
     <hr>
 
     <section>
-        <h2>How do I install instacart-orders?</h2>
-        <p>You install instacart-orders with Homebrew:</p>
-        <pre><code>brew tap mike-vincent/instacart-orders
-brew install instacart-orders</code></pre>
+        <h2>How do I install instacart-scraper?</h2>
+        <p>You install instacart-scraper with Homebrew:</p>
+        <pre><code>brew tap mike-vincent/instacart-scraper
+brew install instacart-scraper</code></pre>
     </section>
 
     <hr>
@@ -135,9 +135,9 @@ brew install instacart-orders</code></pre>
     <hr>
 
     <section>
-        <h2>How do I use instacart-orders?</h2>
-        <p>You use instacart-orders by running it with your session cookie:</p>
-        <pre><code>instacart-orders -s "YOUR_COOKIE"</code></pre>
+        <h2>How do I use instacart-scraper?</h2>
+        <p>You use instacart-scraper by running it with your session cookie:</p>
+        <pre><code>instacart-scraper -s "YOUR_COOKIE"</code></pre>
     </section>
 
     <hr>
@@ -145,28 +145,28 @@ brew install instacart-orders</code></pre>
     <section>
         <h2>Examples</h2>
         <pre><code># Export all orders as JSON
-instacart-orders -s "COOKIE"
+instacart-scraper -s "COOKIE"
 
 # Last 6 months as CSV
-instacart-orders -s "COOKIE" --months 6 -f csv
+instacart-scraper -s "COOKIE" --months 6 -f csv
 
 # Last 30 days to a file
-instacart-orders -s "COOKIE" --days 30 -o orders.json
+instacart-scraper -s "COOKIE" --days 30 -o orders.json
 
 # Since January 2024
-instacart-orders -s "COOKIE" --since 2024-01-01
+instacart-scraper -s "COOKIE" --since 2024-01-01
 
 # Human-readable text output
-instacart-orders -s "COOKIE" -f text
+instacart-scraper -s "COOKIE" -f text
 
 # Quiet mode (no progress output)
-instacart-orders -s "COOKIE" -q > orders.json</code></pre>
+instacart-scraper -s "COOKIE" -q > orders.json</code></pre>
     </section>
 
     <div class="footer">
         <a href="https://www.mikevincent.dev">Mike Vincent</a>, Los Angeles<br>
         © 2026 Mike Vincent. Code licensed MIT.<br>
-        <a href="https://github.com/mike-vincent/instacart-orders">github</a>
+        <a href="https://github.com/mike-vincent/instacart-scraper">github</a>
     </div>
 </body>
 </html>
