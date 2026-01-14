@@ -102,6 +102,21 @@
     <hr>
 
     <section>
+        <h2>Usage</h2>
+        <pre><code>instacart-order-history-fetch \
+  --instacart-session-id "WlhsS05XTXpTVzFrVjFaNlRETkNkR0ZKUW5OaFYwNXNZM2xCYVZwWVNqLS1LUlZ5UHVaUXVkbzZ2dEpsU29qU2ZnPT0tLTQ4MTY1YmM1N2ZhYmUwZWU1MGYxZDAxNjIxMTM2ZGExOTZmOGYyYTE="</code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Instacart Session ID</h2>
+        <p>Log into instacart.com, open your browser DevTools, go to Application → Cookies, and copy the value of <code>_instacart_session_id</code>.</p>
+    </section>
+
+    <hr>
+
+    <section>
         <h2>Homebrew</h2>
         <pre><code>brew tap mike-vincent/instacart-order-history-fetch
 brew install instacart-order-history-fetch</code></pre>
@@ -122,32 +137,6 @@ brew install instacart-order-history-fetch</code></pre>
 cd instacart-order-history-fetch
 chmod +x instacart-order-history-fetch
 ./instacart-order-history-fetch --help</code></pre>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Instacart Session ID</h2>
-        <p>Log into instacart.com, open your browser DevTools, go to Application → Cookies, and copy the value of <code>_instacart_session_id</code>.</p>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Usage</h2>
-        <pre><code># Fetch all orders as JSON
-instacart-order-history-fetch \
-  --instacart-session-id "WlhsS05XTXpTVzFrVjFaNlRETkNkR0ZKUW5OaFYwNXNZM2xCYVZwWVNqLS1LUlZ5UHVaUXVkbzZ2dEpsU29qU2ZnPT0tLTQ4MTY1YmM1N2ZhYmUwZWU1MGYxZDAxNjIxMTM2ZGExOTZmOGYyYTE="
-
-# Fetch last 10 orders as CSV
-instacart-order-history-fetch \
-  --instacart-session-id "WlhsS05XTXpTVzFrVjFaNlRETkNkR0ZKUW5OaFYwNXNZM2xCYVZwWVNqLS1LUlZ5UHVaUXVkbzZ2dEpsU29qU2ZnPT0tLTQ4MTY1YmM1N2ZhYmUwZWU1MGYxZDAxNjIxMTM2ZGExOTZmOGYyYTE=" \
-  -n 10 -f csv
-
-# Fetch to file
-instacart-order-history-fetch \
-  --instacart-session-id "WlhsS05XTXpTVzFrVjFaNlRETkNkR0ZKUW5OaFYwNXNZM2xCYVZwWVNqLS1LUlZ5UHVaUXVkbzZ2dEpsU29qU2ZnPT0tLTQ4MTY1YmM1N2ZhYmUwZWU1MGYxZDAxNjIxMTM2ZGExOTZmOGYyYTE=" \
-  -o orders.json</code></pre>
     </section>
 
     <div class="footer">
