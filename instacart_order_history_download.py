@@ -206,9 +206,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 To get your session cookie:
-  1. Log into instacart.com
-  2. DevTools (Cmd+Option+I) > Application > Cookies
-  3. Copy value of '_instacart_session_id'
+  Log into instacart.com, open DevTools → Cookies, copy _instacart_session_id
 ''')
 
     parser.add_argument('--instacart-session-id', '-instacart-session-id', required=True,

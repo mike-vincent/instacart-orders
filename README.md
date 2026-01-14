@@ -11,9 +11,7 @@ brew install instacart-order-history-download
 
 ## Get your session cookie
 
-1. Log into instacart.com
-2. DevTools (Cmd+Option+I) → Application → Cookies
-3. Copy value of `_instacart_session_id`
+Log into instacart.com, open DevTools → Cookies, and copy `_instacart_session_id`.
 
 ## Usage
 
