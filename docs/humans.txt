@@ -1,6 +1,7 @@
 /* TEAM */
 Developer: Mike Vincent
-Site: https://github.com/mike-vincent
+Site: https://www.mikevincent.dev
+GitHub: https://github.com/mike-vincent
 Location: Los Angeles, CA
 
 /* SITE */

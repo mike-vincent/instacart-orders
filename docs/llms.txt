@@ -50,6 +50,7 @@ instacart-orders -s "COOKIE" -q > orders.json
 ## Author
 
 Mike Vincent
+https://www.mikevincent.dev
 https://github.com/mike-vincent
 
 ## Source
