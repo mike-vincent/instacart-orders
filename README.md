@@ -43,6 +43,10 @@ JSON, CSV, or text with order dates, totals, retailers, and full item details.
 
 [Mike Vincent](https://www.mikevincent.dev), Los Angeles
 
+## Disclaimer
+
+This tool is not affiliated with, endorsed by, or connected to Instacart. Use of this tool may violate Instacart's Terms of Service. You use this tool at your own risk to access your own purchase data.
+
 ## License
 
 MIT
